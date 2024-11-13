@@ -1,8 +1,11 @@
+import files.draw
+import files.calculate
+import files.supportingFunctions
+
 def main():
-    option = input("Choose a option to perform:\n1. Calculate\n2. Draw.\n3. Exit.")
-    while option not in ["1", "2", "0"]:
-        print("Invalid option please choose the correct option.")
-        option = input("Choose a option to perform:\n1. Calculate\n2. Draw.\n3. Exit.")
+    menue = "Choose a option to perform:\n1. Calculate\n2. Draw.\n3. Exit."
+    option = int(input("Choose a option to perform:\n1. Calculate\n2. Draw.\n3. Exit."))
+    option = Invalid_option(option, 3, menue)
     if option == "1":
         pass
     elif option == "2":
